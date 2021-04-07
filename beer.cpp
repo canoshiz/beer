@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 char count[] = "s";
-int i;
+int i = 99;
 int main() {
-	for ( i=99; i>=0; i-- ) {
+	for ( ;; i-- ) {
 		if ( i == 1 ) { count[0] = '\0'; }
 		if ( i != 0 ) {
 			if ( i != 99 ) {

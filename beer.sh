@@ -1,8 +1,10 @@
 #!/bin/sh
+
 count() {
 	printf "$i bottle"
 	if [ "$i" -gt "1" ]; then printf "s"; fi
 }
+
 for i in $(seq 99 -1 0); do
 	if [ ! "$i" -eq "0" ]; then
 		if [ ! "$i" -eq "99" ]; then

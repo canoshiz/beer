@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main(int argc, char *argv[]) {
+int main(int *argc, char *argv[]) {
 	FILE *source, *target;
 	source = fopen(argv[1], "rb");
 	target = fopen(argv[2], "wb");

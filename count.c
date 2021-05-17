@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // These values are adjustable; change them to your liking
+// intc must be equal to cols
 int rows = 1;
 int maxr = 26;
 int cols = 4;

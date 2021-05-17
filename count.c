@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 // These values are adjustable; change them to your liking
 int rows = 1;
 int maxr = 26;

@@ -1,9 +1,11 @@
 #!/bin/sh
+
 # These values are adjustable; change them to your liking
+maxr=23
+maxc=80
+
 rows=1
-maxr=26
 cols=4
-maxc=98
 intc=$cols
 
 # Count the rows on the screen

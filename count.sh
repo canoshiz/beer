@@ -45,3 +45,10 @@ done
 
 # Add newline after execution
 printf "\n"
+
+# Housekeeping
+unset maxr
+unset maxc
+unset rows
+unset cols
+unset intc

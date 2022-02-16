@@ -1,51 +1,15 @@
 #include <stdio.h>
+#include <unistd.h>
 
-// These values are adjustable; change them to your liking
-const int maxr = 23;
-const int maxc = 80;
+int main() {
+	int time;
 
-int rows = 1;
-int cols = 4;
-int intc = 4;
+	printf("\033[2J\033[1;1H");
 
-int main(void) {
-
-	// Count the rows on the screen
-	while ( rows <= maxr ) {
-
-		// Add preceding 0s to integers less than 10
-		if ( rows < 10 ) {
-			printf("0");
-		}
-
-		printf("%i", rows);
-
-		// Add newlines as appropriate
-		if ( rows < maxr ) {
-			printf("\n");
-		} else {
-			printf(" ");
-		}
-
-		rows = rows + 1;
-
+	for ( time = 0 ;; time++ ) {
+		printf("\033[1;1H");
+		printf("Seconds since this program began running: ");
+		printf("%i\n", time);
+		sleep(1);
 	}
-
-	// Count the columns on the screen
-	while ( cols <= maxc ) {
-
-		printf("%i", intc);
-		cols = cols + 1;
-		intc = intc + 1;
-
-		// Print 0s instead of 10s
-		if ( intc == 10 ) {
-			intc = 0;
-		}
-
-	}
-
-	// Add newline after execution
-	printf("\n");
-
 }
